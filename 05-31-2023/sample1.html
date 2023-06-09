@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+</body>
+<script>
+  var environment = 'dev';
+  var sendingAmount = 100 ;
+  
+  if (environment === 'dev') {
+  sendingAmount + 10; // Increment by 10%
+} else if (environment === 'test') {
+  sendingAmount + 20; // Increment by 20%
+} else if (environment === 'prod') {
+  sendingAmount + 30; // Increment by 30%
+} else if (environment === 'prad') {
+  sendingAmount + 5; // Increment by 5%
+}
+
+console.log('Sending amount:', sendingAmount);
+
+</script>
+</html>
